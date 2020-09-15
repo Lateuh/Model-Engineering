@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefix1:map
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:prefix1="URI1"
+    xsi:schemaLocation="URI1 ../My.ecore"
+    name="Montpellier">
+  <road xsi:type="prefix1:Street"
+      name="Tournesol"/>
+  <road xsi:type="prefix1:Pedestrian"
+      name="Comedie"
+      length="1500"/>
+  <road xsi:type="prefix1:Street"
+      name="Frangipane"
+      meet="//@road.4 //@road.3"/>
+  <road xsi:type="prefix1:Pedestrian"
+      name="Opera"
+      length="650"
+      meet="//@road.4 //@road.2"/>
+  <road xsi:type="prefix1:Street"
+      name="Arthur Alley"
+      meet="//@road.2 //@road.3"/>
+  <space xsi:type="prefix1:Square"/>
+  <space xsi:type="prefix1:Square"/>
+</prefix1:map>
